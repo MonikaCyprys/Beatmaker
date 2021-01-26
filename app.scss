@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sequencer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: peachpuff;
+  .kick-track,
+  .snare-track,
+  .hihat-track {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    .controls {
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      flex: 1;
+      margin: 0 20px;
+      .name-track {
+        font-family: sans-serif;
+      }
+      .mute {
+        background-color: gray;
+        color: white;
+        width: 2rem;
+        height: 2rem;
+        border: none;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &:hover {
+          background-color: rgb(105, 105, 105);
+        }
+        span {
+          pointer-events: none;
+        }
+      }
+      select {
+        padding: 5px;
+      }
+    }
+  }
+  .kick,
+  .hihat,
+  .snare {
+    display: flex;
+    .pad {
+      width: 3rem;
+      height: 3rem;
+      margin: 5px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+
+      &.kick-pad {
+        background-color: paleturquoise;
+      }
+      &.snare-pad {
+        background-color: rgb(175, 238, 189);
+      }
+      &.hihat-pad {
+        background-color: rgb(176, 175, 238);
+      }
+
+      &.kick-pad.active {
+        background-color: rgb(129, 238, 238);
+      }
+      &.snare-pad.active {
+        background-color: rgb(127, 243, 152);
+      }
+      &.hihat-pad.active {
+        background-color: rgb(127, 125, 238);
+      }
+    }
+  }
+
+  .play {
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+  }
+}

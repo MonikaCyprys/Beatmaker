@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sequencer {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: peachpuff;
+}
+
+.sequencer .kick-track,
+.sequencer .snare-track,
+.sequencer .hihat-track {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+}
+
+.sequencer .kick-track .controls,
+.sequencer .snare-track .controls,
+.sequencer .hihat-track .controls {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 20px;
+}
+
+.sequencer .kick-track .controls .name-track,
+.sequencer .snare-track .controls .name-track,
+.sequencer .hihat-track .controls .name-track {
+  font-family: sans-serif;
+}
+
+.sequencer .kick-track .controls .mute,
+.sequencer .snare-track .controls .mute,
+.sequencer .hihat-track .controls .mute {
+  background-color: gray;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sequencer .kick-track .controls .mute:hover,
+.sequencer .snare-track .controls .mute:hover,
+.sequencer .hihat-track .controls .mute:hover {
+  background-color: dimgray;
+}
+
+.sequencer .kick-track .controls .mute span,
+.sequencer .snare-track .controls .mute span,
+.sequencer .hihat-track .controls .mute span {
+  pointer-events: none;
+}
+
+.sequencer .kick-track .controls select,
+.sequencer .snare-track .controls select,
+.sequencer .hihat-track .controls select {
+  padding: 5px;
+}
+
+.sequencer .kick,
+.sequencer .hihat,
+.sequencer .snare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sequencer .kick .pad,
+.sequencer .hihat .pad,
+.sequencer .snare .pad {
+  width: 3rem;
+  height: 3rem;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sequencer .kick .pad.kick-pad,
+.sequencer .hihat .pad.kick-pad,
+.sequencer .snare .pad.kick-pad {
+  background-color: paleturquoise;
+}
+
+.sequencer .kick .pad.snare-pad,
+.sequencer .hihat .pad.snare-pad,
+.sequencer .snare .pad.snare-pad {
+  background-color: #afeebd;
+}
+
+.sequencer .kick .pad.hihat-pad,
+.sequencer .hihat .pad.hihat-pad,
+.sequencer .snare .pad.hihat-pad {
+  background-color: #b0afee;
+}
+
+.sequencer .kick .pad.kick-pad.active,
+.sequencer .hihat .pad.kick-pad.active,
+.sequencer .snare .pad.kick-pad.active {
+  background-color: #81eeee;
+}
+
+.sequencer .kick .pad.snare-pad.active,
+.sequencer .hihat .pad.snare-pad.active,
+.sequencer .snare .pad.snare-pad.active {
+  background-color: #7ff398;
+}
+
+.sequencer .kick .pad.hihat-pad.active,
+.sequencer .hihat .pad.hihat-pad.active,
+.sequencer .snare .pad.hihat-pad.active {
+  background-color: #7f7dee;
+}
+
+.sequencer .play {
+  background-color: gray;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=app.css.map */
