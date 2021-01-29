@@ -20,7 +20,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: peachpuff;
 }
 
 .sequencer .kick-track,
@@ -134,19 +133,19 @@
 .sequencer .kick .pad.kick-pad.active,
 .sequencer .hihat .pad.kick-pad.active,
 .sequencer .snare .pad.kick-pad.active {
-  background-color: #81eeee;
+  background-color: #50d6d6;
 }
 
 .sequencer .kick .pad.snare-pad.active,
 .sequencer .hihat .pad.snare-pad.active,
 .sequencer .snare .pad.snare-pad.active {
-  background-color: #7ff398;
+  background-color: #45d464;
 }
 
 .sequencer .kick .pad.hihat-pad.active,
 .sequencer .hihat .pad.hihat-pad.active,
 .sequencer .snare .pad.hihat-pad.active {
-  background-color: #7f7dee;
+  background-color: #4c4ad3;
 }
 
 .sequencer .play {
@@ -155,5 +154,27 @@
   padding: 10px 20px;
   border: none;
   margin-top: 20px;
+}
+
+@-webkit-keyframes playTrack {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes playTrack {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 /*# sourceMappingURL=app.css.map */
