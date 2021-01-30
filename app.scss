@@ -87,6 +87,23 @@
     border: none;
     margin-top: 20px;
   }
+  .tempo {
+    margin: 30px;
+    .tempo-slider {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+      position: relative;
+      background-color: gray;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    p {
+      font-size: 20px;
+      margin: 20px;
+      text-align: center;
+    }
+  }
 }
 
 @keyframes playTrack {

@@ -156,6 +156,26 @@
   margin-top: 20px;
 }
 
+.sequencer .tempo {
+  margin: 30px;
+}
+
+.sequencer .tempo .tempo-slider {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  position: relative;
+  background-color: gray;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.sequencer .tempo p {
+  font-size: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
 @-webkit-keyframes playTrack {
   from {
     -webkit-transform: scale(1);
