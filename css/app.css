@@ -75,10 +75,10 @@
   transition: all 0.5s ease;
 }
 
-.sequencer .kick-track .controls .mute:hover,
-.sequencer .snare-track .controls .mute:hover,
-.sequencer .hihat-track .controls .mute:hover {
-  background-color: dimgray;
+.sequencer .kick-track .controls .mute.active,
+.sequencer .snare-track .controls .mute.active,
+.sequencer .hihat-track .controls .mute.active {
+  background-color: #adadad;
 }
 
 .sequencer .kick-track .controls .mute span,
